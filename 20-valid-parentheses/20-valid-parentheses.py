@@ -6,7 +6,7 @@ class Solution(object):
         """
         c=[]
         if not s:
-            return True
+            return False
         if (len(s)==1):
             return False
         for i in range(len(s)) :
