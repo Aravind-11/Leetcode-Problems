@@ -4,7 +4,7 @@ class Solution(object):
         :type flowerbed: List[int]
         :type n: int
         :rtype: bool
-        """
+        
         if not n:
             return True
         i=1
@@ -27,9 +27,22 @@ class Solution(object):
             else:
                 i+=1
                 
-            
-    
-            
+            """
+        prev=0
+        
+        for i in flowerbed:
+            if(i==1):
+                if(prev==1):
+                    n+=1
+                
+                prev=1
+            else:
+                if(prev!=1):
+                    n-=1
+                    prev=1
+                else:
+                    prev=0
+                
         
             
                 
