@@ -16,7 +16,7 @@ class Solution(object):
         while(i+2<len(nums)):
             a,b,c=nums[i],nums[i+1],nums[i+2]
             if checkTriangle(a,b,c):
-                max_peri=max(max_peri,a+b+c)
+                return(a+b+c)
         
             i+=1
         return max_peri
