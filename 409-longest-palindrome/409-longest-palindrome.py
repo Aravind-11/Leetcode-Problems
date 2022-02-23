@@ -15,7 +15,8 @@ class Solution(object):
             else:
                 count+=a[j]-1 # if frequency is odd, we remove one element from the freque
                 oddFound=True
-        return count+1 if oddFound else count
+        return count+1 if oddFound else count 
+    # if odd is found , then take that one element
                 
        
                 
