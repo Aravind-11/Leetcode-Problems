@@ -30,7 +30,6 @@ class Solution(object):
                     max1=a[j]
                     max_pos=j
         cost=0
-        print(max_pos)
         for i in position:
             
             if( i != max_pos):
