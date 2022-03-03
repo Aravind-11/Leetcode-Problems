@@ -34,7 +34,6 @@ class Solution(object):
             while y:
                 
                 if c1==c2:
-                    print y.val
                     break
                 c2-=1
                 y=y.next
