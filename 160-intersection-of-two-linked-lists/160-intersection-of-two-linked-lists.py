@@ -27,7 +27,6 @@ class Solution(object):
             while x:
                 
                 if c1==c2:
-                    print 'hi'
                     break
                 c1-=1
                 x=x.next
@@ -35,7 +34,6 @@ class Solution(object):
             while y:
                 
                 if c1==c2:
-                    print 'hey'
                     print y.val
                     break
                 c2-=1
