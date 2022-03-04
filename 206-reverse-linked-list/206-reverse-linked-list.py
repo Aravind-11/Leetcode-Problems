@@ -9,26 +9,17 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head:
-            return 
-        c=0
-        head_copy=head
-        while head_copy:
-            c+=1
-            head_copy=head_copy.next
-        if c==1:
-            return head
-        p1=head.next
-        head.next=None
-        p2=p1.next
-        while p1:
-            print('1')
-            p1.next=head
-            head=p1
-            p1=p2
-            if p2:
-                p2=p2.next
-            else:
+        c=[]
+        x=head
+        while x:
+            c.append(x.val)
+            x=x.next
+        x=head
+        c=c[::-1]
+        for i in c:
+            x.val=i
+            x=x.next
+            if not x:
                 return head
         
         
