@@ -22,16 +22,25 @@ def sortedMerge(head1, head2):
     x=head
     while head1 and head2:
         if head1.data>head2.data:
-            head.next=head2
+            node=Node(head2.data)
+            head.next=node
             head2=head2.next
         else:
-            head.next=head1
+            node=Node(head1.data)
+            head.next=node
             head1=head1.next
         head=head.next
-    if head1:
-        head.next=head1
-    if head2:
-        head.next=head2
+    while head1:
+        node=Node(head1.data)
+        head.next=node
+        
+        head1=head1.next
+        head=head.next
+    while head2:
+        node=Node(head2.data)
+        head.next=node
+        head2=head2.next
+        head=head.next
     return x.next
 
 #{ 
