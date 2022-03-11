@@ -65,7 +65,6 @@ class Solution(object):
                     break
             
             x=x.next
-        x=head
         
         return head
                 
