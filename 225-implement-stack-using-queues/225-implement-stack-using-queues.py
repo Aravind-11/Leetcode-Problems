@@ -1,32 +1,36 @@
 class MyStack(object):
 
     def __init__(self):
-        self.arr=[]
+        self.queue=[]
 
     def push(self, x):
         """
         :type x: int
         :rtype: None
         """
-        self.arr.append(x)
+        self.queue.insert(0,x)
 
     def pop(self):
         """
         :rtype: int
         """
-        return self.arr.pop()
-
+        if not len(self.queue):
+            return 
+        x=self.queue[0]
+        del self.queue[0]
+        return x
+        
     def top(self):
         """
         :rtype: int
         """
-        return self.arr[-1]
+        return self.queue[0]
 
     def empty(self):
         """
         :rtype: bool
         """
-        if not len(self.arr):
+        if not len(self.queue):
             return True
         return False
 
