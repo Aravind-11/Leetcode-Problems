@@ -16,13 +16,12 @@ class Solution(object):
             if x==len(target):
                 break
             check_list.append(beg_list[i])
-            
+            out.append('Push')
             if check_list[x]==target[x]:
-                out.append('Push')
+                
                 x+=1
             else:
                 check_list.pop()
-                out.append('Push')
                 out.append('Pop')
             
             
