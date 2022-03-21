@@ -9,26 +9,17 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head:
-            return 
-        c=0
-        head_copy=head
-        while head_copy:
-            c+=1
-            head_copy=head_copy.next
-        if c==1:
+        if not head or not head.next:
             return head
-        p1=head.next
+        temp1=head.next
         head.next=None
-        p2=p1.next
-        while p1:
-        
-            p1.next=head
-            head=p1
-            p1=p2
-            if p2:
-                p2=p2.next
-            else:
-                return head
+        while temp1:
+            temp2=temp1.next
+            temp1.next=head
+            head=temp1
+            temp1=temp2
+            if not temp2:
+                break
+        return head
         
         
