@@ -18,7 +18,7 @@ class Solution(object):
             temp1.next=head
             head=temp1
             temp1=temp2
-            if not temp2:
+            if not temp1:
                 break
         return head
         
