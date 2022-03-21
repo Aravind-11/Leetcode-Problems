@@ -18,6 +18,5 @@ class Solution(object):
                 
             maxC=max(maxC,c)
             
-            if len(stack)==0:
-                c=0
+            
         return maxC
