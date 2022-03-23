@@ -26,8 +26,8 @@ class Solution(object):
                     pnt=pnt.left
                 root.val=pnt.val
                 root.right=self.deleteNode(root.right,pnt.val)
-        elif root.val<key:
+        if root.val<key:
             root.right=self.deleteNode(root.right,key)
-        elif root.val>key:
+        if root.val>key:
             root.left=self.deleteNode(root.left,key)
         return root
