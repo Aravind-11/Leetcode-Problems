@@ -14,9 +14,8 @@ class Solution:
         for i in arr:
             presum+=i
             
-            if presum in d and d[presum]==0:
-                d[presum]=1
-            elif presum not in d:
+            
+            if presum not in d:
                 d[presum]=1
             elif presum in d and d[presum]==1:
                 return True
