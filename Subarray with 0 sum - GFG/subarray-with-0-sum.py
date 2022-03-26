@@ -17,7 +17,7 @@ class Solution:
             
             if presum not in d:
                 d[presum]=1
-            elif presum in d and d[presum]==1:
+            elif presum in d:
                 return True
                 
         return False
