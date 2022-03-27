@@ -23,12 +23,13 @@ class Solution:
             level=[]
             for i in range(n):
                 temp=queue[-1]
-                queue.pop()
+                
                 if temp.left:
                     queue.insert(0,temp.left)
                 if temp.right:
                     queue.insert(0,temp.right)
                 level.append(temp.data)
+                queue.pop()
             max_len=max(max_len,len(level))
         return max_len
 
