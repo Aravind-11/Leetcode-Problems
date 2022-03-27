@@ -15,27 +15,14 @@ class Solution:
     #Function to check if two trees are identical.
     def isIdentical(self,root1, root2):
         # Code here
-        def inOrder1(root):
-            if not root:
-                return
-            self.c1.append(root.data)
-            inOrder1(root.left)
-            
-            inOrder1(root.right)
-            
-        def inOrder2(root):
-            if not root:
-                return 
-            self.c2.append(root.data)
-            inOrder2(root.left)
-            
-            inOrder2(root.right)
-        inOrder1(root1)
-        inOrder2(root2)
-        if self.c1==self.c2:
+        if not root1 and not root2:
             return True
-        else:
+        if not root1 or not root2:
             return False
+        if root1.data!=root2.data:
+            return False
+        return self.isIdentical(root1.left,root2.left) and self.isIdentical(root1.right,root2.right)
+        
 #{ 
 #  Driver Code Starts
 #Initial Template for Python 3
