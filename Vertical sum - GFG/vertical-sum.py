@@ -100,8 +100,8 @@ class Solution:
         vertical(root,i,d)
         ans=[]
         #print (self.d)
-        for i,j in enumerate(d):
-            ans.append(j)
+        for i in d:
+            ans.append(i)
         ans.sort()
         res=[]
         for i in ans:
