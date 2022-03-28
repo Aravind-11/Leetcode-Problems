@@ -80,34 +80,32 @@ class Node:
         self.right = None
 '''
 class Solution:
-    def __init__(self):
-        self.d={}
-        
         
     #Complete the function below
     def verticalSum(self, root):
+        d={}
         #:param root: root of the given tree.
         if not root.left and not root.right:
             return root.data
-        def vertical(root,i):
+        def vertical(root,i,d):
             if not root:
                 return
-            if i not in self.d:
-                self.d[i]=root.data
-            elif i in self.d:
-                self.d[i]=self.d[i]+root.data
-            vertical(root.left,i-1)
-            vertical(root.right,i+1)
+            if i not in d:
+                d[i]=root.data
+            elif i in d:
+                d[i]=d[i]+root.data
+            vertical(root.left,i-1,d)
+            vertical(root.right,i+1,d)
         i=0    
-        vertical(root,i)
+        vertical(root,i,d)
         ans=[]
         #print (self.d)
-        for i,j in enumerate(self.d):
+        for i,j in enumerate(d):
             ans.append(j)
         ans.sort()
         res=[]
         for i in ans:
-            res.append(self.d[i])
+            res.append(d[i])
         return res
         
         
