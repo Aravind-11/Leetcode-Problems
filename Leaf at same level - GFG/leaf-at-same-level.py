@@ -10,10 +10,11 @@ class Solution:
         d={}
         def preOrder(root,i,d):
             if not root:
-                return False
+                return
             if not root.left and not root.right:
                 d[i]=root.data
-                
+                if len(d)>1:
+                    return False
             preOrder(root.left,i+1,d)
             preOrder(root.right,i+1,d)
         preOrder(root,0,d)
