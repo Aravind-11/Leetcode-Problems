@@ -10,7 +10,7 @@ class Solution:
         d={}
         def preOrder(root,i,d):
             if not root:
-                return True
+                return False
             if not root.left and not root.right:
                 d[i]=root.data
                 
