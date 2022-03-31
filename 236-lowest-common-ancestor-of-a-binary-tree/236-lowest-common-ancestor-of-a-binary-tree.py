@@ -15,10 +15,9 @@ class Solution(object):
         """
         if not root:
             return
-        if root==p:
+        if root==p or root==q:
             return root
-        if root==q:
-            return root
+        
         left=self.lowestCommonAncestor(root.left,p,q)
         right=self.lowestCommonAncestor(root.right,p,q)
         if not left:
