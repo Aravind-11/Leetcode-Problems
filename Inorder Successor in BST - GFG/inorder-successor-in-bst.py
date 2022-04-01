@@ -21,7 +21,7 @@ class Solution:
                 temp=temp.left
             else:
                 temp=temp.right
-        return suc        
+        return suc
 
 #{ 
 #  Driver Code Starts
