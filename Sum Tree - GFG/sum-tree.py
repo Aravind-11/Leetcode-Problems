@@ -22,7 +22,7 @@ class Solution:
                 return l+r+root.data
             else:
                 return 0
-        if check(root)!=0:
+        if check(root):
             return True
         return False
             
