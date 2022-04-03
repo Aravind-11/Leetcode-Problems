@@ -19,8 +19,8 @@ def IsFoldable(root):
             return False
         if helper(root1.left,root2.right) and helper(root1.right,root2.left):
             return True
-        else:
-            return False
+        
+        return False
     if not root:
         return True
     if helper(root.left,root.right):
