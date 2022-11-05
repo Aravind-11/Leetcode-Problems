@@ -1,2 +1,3 @@
 # Leetcode-Problems
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of LeetCode questions to help the student community at NIT Trichy in data strucutres and algorithms.
+Feel from to email me regarding doubts in my solutions provided. 
