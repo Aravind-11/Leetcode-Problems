@@ -1,3 +1,3 @@
 # Leetcode-Problems
-Collection of LeetCode questions to help the student community at NIT Trichy in data strucutres and algorithms.
+Collection of LeetCode questions for DataByte, NIT Trichy. Submit your solutions by sending a PR. 
 Feel from to email me regarding doubts in my solutions provided. 
